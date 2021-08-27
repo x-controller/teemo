@@ -1,10 +1,7 @@
 {
   "name": "teemo",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
-  "publishConfig": {
-    "registry": "https://github.com/x-controller/teemo.git"
-  },
   "repository": {
     "url": "https://github.com/x-controller/teemo.git"
   },
@@ -20,8 +17,12 @@
   "main": "background.js",
   "dependencies": {
     "core-js": "^3.6.5",
+    "electron-store": "^8.0.0",
     "electron-updater": "^4.3.9",
-    "vue": "^3.2.6"
+    "element-plus": "^1.1.0-beta.7",
+    "vue": "^3.2.6",
+    "vue-router": "4",
+    "vuex": "4"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
@@ -47,7 +48,9 @@
     "parserOptions": {
       "parser": "babel-eslint"
     },
-    "rules": {}
+    "rules": {
+      "no-unused-vars": "off"
+    }
   },
   "browserslist": [
     "> 1%",

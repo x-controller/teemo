@@ -9,7 +9,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "electron:build": "vue-cli-service electron:build",
+    "electron:build": "set GH_TOKEN=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 && vue-cli-service electron:build",
     "electron:serve": "vue-cli-service electron:serve",
     "postinstall": "electron-builder install-app-deps",
     "postuninstall": "electron-builder install-app-deps"
@@ -20,6 +20,7 @@
     "electron-store": "^8.0.0",
     "electron-updater": "^4.3.9",
     "element-plus": "^1.1.0-beta.7",
+    "ethers": "^5.4.6",
     "vue": "^3.2.6",
     "vue-router": "4",
     "vuex": "4"
